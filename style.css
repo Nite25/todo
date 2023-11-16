@@ -1,0 +1,253 @@
+body{
+    margin:0;    
+}
+#left_side{
+    background-color: #525252;
+    display:flex;
+    flex-direction: column;
+    /* height:100vh; */
+    min-height: 100vh;
+    max-height: auto;
+    width:20vw;
+    gap:1vw;
+    font-family: "Comic sans MS";
+    font-weight: 600;
+    padding-top:2vh;
+    box-sizing: border-box;
+    align-items: center;
+    align-content: center;
+    
+}
+.lists{
+    border-radius: 8px;
+    background-color:#D9E7E2;
+    height:6vh;
+    width:90%;
+    font-size:2.5vh;
+    text-align:center;
+    padding:1vh 0;
+    box-sizing: border-box;
+    box-shadow: 0px 7px rgb(150, 149, 149);
+    margin-bottom:0.5vh;
+}
+
+#right_side{
+    background-color: #DEE9E9;
+    width:80vw;
+    min-height: 100vh;
+    max-height: auto;
+}
+#whole_Portion{
+    display:flex;
+    flex-direction:row;
+}
+.lists:hover{
+    cursor:pointer;
+    background-color:#C5CCCA ;
+}
+.lists:active{
+    background-color:#B6BBBA;
+}
+#square{
+    width:96.5%;
+    height:auto;
+    background-color:#a9a9a9ce;
+    margin:3% 1.5% 1.5% 1.5%;
+    border-radius:20px;
+    padding-top:2vh;
+    padding-left:2.9vw;
+    box-sizing: border-box;
+    max-height: 90vh;
+    padding-bottom:1.5vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top:-1.2vh;
+    box-shadow: 7px 7px rgb(57, 55, 55);
+}
+#subparts{
+    max-height: 95vh;
+    width:94.5%;
+    flex-wrap: wrap;
+    margin-top:10px;
+    position: relative;
+    top:0.5vh;
+    left:1.3vw;
+    overflow-x: hidden;
+    padding-bottom:3vh;
+}
+/* as we are facing the problem when child div increasing and child  is overflow from the parent div(parent div is fixed) to avoid this we first declare parent element as a flex and afterwards we declare the child property wrap as flex-wrap */
+
+#subparts::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  /* Track */
+  #subparts::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 20px;
+    margin-top:15px;
+    margin-bottom:10px;
+    /* margin is use to adjust the position of the scrollbar */
+  }
+   
+  /* Handle */
+  #subparts::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 20px;
+    
+  }
+  
+  /* Handle on hover */
+  #subparts::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+.entered_info{
+    width:92%;
+    /* height:6vh; */
+    height: max-content;
+    background-color:rgba(131, 131, 131, 0.847);
+    border-radius:5px;
+    border:0px;
+    font-size:3vh;
+    padding:1.5vh;
+    color:black;
+    font-family: "Comic sans MS";
+    font-weight:400;
+    outline:none;
+    margin-top:10px;
+    margin-right: 0;
+    box-sizing: content-box;
+    box-shadow: 0px 5px rgb(57, 55, 55);
+    /* to make the border of the input text none we should make outline none */
+}
+/* when you want to change the property of input field while taking input then use focus */
+
+/* active property help to set the style when the element is clicked and focus is help to set the style when the element is selected */
+
+#entered_info:focus {
+    border:black 1px solid;
+    
+}
+
+.editi:focus{
+    outline:none;
+}
+#headerpart{
+    font-family:"Comic sans MS";
+    font-size: 5vh;
+    margin-bottom:10px;
+    
+    /* position */
+}
+#break{
+    background-color:rgb(122, 122, 122);
+    width:97.4%;
+    height:2px;
+}
+input::placeholder{
+    /* this help to apply the style to the placeholder */
+    color:#353535
+}
+.entered_info1{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+.options{
+    position:absolute;
+    left:95%;
+    top:10%;
+    font-size:4vh;
+    cursor: pointer;
+    display: flex;
+    flex-direction:column;
+    width:3vh;
+}
+.options11{
+    visibility:hidden;
+    font-size:1.5vw;
+    background-color: white;
+    width:6vw;
+    border-radius:7%;
+    font-family: 'Comic Neue';
+    z-index: 1;
+    margin-right:1vh;
+    box-sizing: border-box;
+}
+
+.edits{
+    padding:5%;
+    border-radius:7% 7% 0% 0%;
+}
+.delete{
+    padding:5%;
+    border-radius:0% 0% 7% 7%;
+    margin:-0.3px;
+}
+/* #dot{
+    font-size: 2vw;
+    text-align: center;
+    margin-bottom:5%;
+    padding-top:0px;
+    vertical-align: baseline;
+} */
+hr{
+    margin: 0;
+    background-color: black;
+}
+.edits:hover{
+    cursor:pointer;
+    background-color:#C5CCCA ;
+}
+.edits:active{
+    background-color:#B6BBBA;
+}
+.delete:hover{
+    cursor:pointer;
+    background-color:red ;
+    color:white
+}
+.delete:active{
+    background-color:rgb(160, 4, 4);
+}
+
+.dot{
+    width:max-content;
+}
+.editi{
+    width:95%;  
+    
+}
+#initial{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+#delete_all_task{
+    width:max-content;
+    border:1px solid rgb(217, 12, 12);
+    padding:5px;
+    font-family:"Comic sans MS";
+    font-size: 2.8vh;
+    font-weight:400;
+    color:whitesmoke;
+    background-color: rgb(225, 13, 13);
+    border-radius: 5px;
+    box-shadow: 0px 5.5px rgb(165, 9, 9);
+    margin-left: auto;
+    margin-right:3vw;
+    margin-bottom:2.5px;
+    /* by using the margin-left:auto it can put the element to last position */
+}
+#delete_all_task:hover{
+    background-color: rgb(201, 12, 12);
+    box-shadow: 0px 5.5px rgb(143, 8, 8);
+    cursor:pointer;
+}
+.entered_info1:hover{
+    cursor:pointer;
+}

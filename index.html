@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="to-do-list.png">
+</head>
+<body>
+    <div id="whole_Portion">
+    <div id="left_side">
+        <div id="Today_plan" class="lists"><div class="texts">Today's Task</div></div>
+        <div id="Upcoming_plan" class="lists">Upcoming Tasks</div>
+        <div id="All_plans" class="lists">All Tasks</div>
+        <div id="About_us" class="lists">About us</div>
+    </div>
+    <div id="right_side">
+        <div id="square">
+            <div id="initial"> 
+            <div id="headerpart">Today's Task</div>
+            <div id="delete_all_task">Delete Tasks</div>
+        </div>
+            <div id="break"></div>
+            <div id="subparts">
+                <audio src="complete.mp3" id="Audio"></audio>
+                <input type="text"  class="entered_info" id="entered_info2" placeholder="Enter your task...">  
+            </div>
+        </div>
+    </div>
+</div>
+<script src="logic.js"></script>
+</body>
+</html>
